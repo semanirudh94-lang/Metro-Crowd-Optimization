@@ -7,7 +7,6 @@
 MetroSystem::MetroSystem() : crowd(stations) {}
 
 // File format, one station per line:  id name capacity currentLoad
-// Lines starting with # are ignored.
 bool MetroSystem::loadStations(const std::string& file) {
     std::ifstream in(file);
     if (!in) {
@@ -28,7 +27,6 @@ bool MetroSystem::loadStations(const std::string& file) {
 }
 
 // File format, one connection per line:  from to time
-// Each line is added in both directions.
 bool MetroSystem::loadNetwork(const std::string& file) {
     std::ifstream in(file);
     if (!in) {
