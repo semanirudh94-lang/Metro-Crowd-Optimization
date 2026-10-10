@@ -7,7 +7,6 @@
 #include "CrowdManager.h"
 #include "RouteOptimizer.h"
 
-// Ties everything together: loads data, finds a route, updates crowd.
 class MetroSystem {
 private:
     std::vector<Station> stations;   // must be declared before crowd
